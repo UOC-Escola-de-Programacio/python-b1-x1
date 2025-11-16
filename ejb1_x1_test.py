@@ -16,7 +16,7 @@ def test_largest_word():
 
 def test_is_palindrome_word():
     assert is_palindrome_word(
-        "aa") == True, "'aa' es un palindrómo Check the function: is_palindrome_word"
+            "aa") == True, "'aa' es un palindrómo Check the function: is_palindrome_word"
     assert is_palindrome_word(
         "a") == True, "'a' es un palindrómo Check the function: is_palindrome_word"
     assert is_palindrome_word(
@@ -45,8 +45,9 @@ def test_count_palindrome_words():
     assert count_palindrome_words(
         "The is no palindrome\nAta; Aviva; Azuza; Apa; Afromorfa") == 5, "'Check the function: count_palindrome_words"
     assert count_palindrome_words(
-        "a r e r\nAta; Azuza; Apa; aa rr") == 3, "'Check the function: count_palindrome_words"
-
+        "a r e r\nAta; Azuza; Apa; aa rr") == 5, "'Check the function: count_palindrome_words"
+    # Si no me equivoco este último assert debe ser 5 no 3, ya que en is_palindrome_word "aa" se considera True
+    # y no es case sensitive no?
 
 def test_find_size_largest_sentence():
     assert find_size_largest_sentence(
