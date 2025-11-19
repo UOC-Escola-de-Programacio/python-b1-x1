@@ -1,3 +1,6 @@
+#Alumno: Carlos Lario Gómez
+#Email: carloslariogomez@gmail.com
+
 import string
 
 TEXT = '''

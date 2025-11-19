@@ -1,3 +1,6 @@
+#Alumno: Carlos Lario Gómez
+#Email: carloslariogomez@gmail.com
+
 from ejb1_x1_main import *
 from util_package.text_manager import TEXT
 import pytest

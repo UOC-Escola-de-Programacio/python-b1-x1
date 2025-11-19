@@ -1,3 +1,6 @@
+#Alumno: Carlos Lario Gómez
+#Email: carloslariogomez@gmail.com
+
 from util_package import text_manager 
 from util_package.text_manager import TEXT, is_newline, is_space, remove_punctuation_marks
 
