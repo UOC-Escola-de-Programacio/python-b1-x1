@@ -1,7 +1,10 @@
-import string
-# Do not change the following lines
+#Alumno: Carlos Lario Gómez
+#Email: carloslariogomez@gmail.com
 
-TEXT = '''Are the following lines palindromes?
+import string
+
+TEXT = '''
+Are the following lines palindromes?
 A man, a plan, a canal, Panama.
 This line is not a palindrome
 Don't nod
@@ -46,24 +49,27 @@ So many dynamos!
 Red rum, sir, is murder.
 '''
 
+"""
+is_new_line(character): Es una función que detecta el final de una oración. Deberás
+suponer que las frases están separadas por "\n" (nueva línea). Si el carácter es este símbolo,
+devolverá True.
+"""
 
 def is_newline(character):
-    # Do not change this method
-    """ A function that detects the ending of a sentence. Here, the sentences are separated by a "\n". 
-    If the character is this simbol it will return True.
-    """
     return character == "\n"
-
-
+    
+"""
+is_space(character): Es una función que detecta si un carácter es un espacio en blanco.
+Si el carácter es este símbolo, devolverá True.
+"""
 def is_space(character):
-    # Do not change this method
-    """ A function that detects if a character is an blank space.
-    """
     return character == " "
 
+"""
+remove_punctuation_marks(cad): Una función que elimina los signos de puntuación de
+una palabra o un texto. Este método devuelve como resultado una cadena de caracteres sin
+signos de puntuación.
+"""
 
 def remove_punctuation_marks(cad):
-    # Do not change this method
-    """ A function that removes punctuation marks from a word or a text.
-    """
     return cad.translate(str.maketrans('', '', string.punctuation))
