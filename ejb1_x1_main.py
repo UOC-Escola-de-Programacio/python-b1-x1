@@ -48,24 +48,68 @@ el valor pasado como filtro y la oración tiene una longitud de la cadena de tex
 from util_package import text_manager 
 from util_package.text_manager import TEXT, is_newline, is_space, remove_punctuation_marks
 
+
 def find_largest_word(text):
-    # Write here your code
-    pass                
-
-def is_palindrome_word(word):
-    # Write here your code
-    pass
+    assert find_largest_word(
+        TEXT == "nonpalindrome", "Check the function: find_largest_word"
+    assert find_largest_word(
+        "Hola esta es ordenador") == "ordenador", "Check the function: find_largest_word"
+    assert find_largest_word(
+        "Hola este es mi ordenador/nEn la actualidad prefiero una televisión") == "televisión", "Check the function: find_largest_word"
+    assert find_largest_word(
+        "Hola este es mi ordenador/nEn la actualidad prefiero una televisión/nPero por ahora no tengo un mando_a_distancia ") == "mando_a_distancia", "Check the function: find_largest_word"
     
-
+                    
+def is_palindrome_word(word):
+    assert is_palindrome_word(
+        "a") == True, "'a' es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+        "aa") == True, "'aa' es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+        "Ata") == True, "'Ata', es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+        "Aviva") == True, "'Aviva', es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+        "Azuza") == True, "'Azuza', es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+         "Apa") == True, "'Apa', es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+         "Afromorfa") == True, "'Afromorfa', es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+         "bzm") == False, "'bzm', es un palindrómo Check the function: is_palindrome_word"
+    assert is_palindrome_word(
+         "Maria") == False, "'Maria', es un palindrómo Check the function: is_palindrome_word"
+        
 
 def count_palindrome_words(text):
-    # Write here your code
-    pass
-
-
+    assert count_palindrome_words(
+        TEXT) == 36, "Check the function: count_palindrome_words"
+    assert count_palindrome_words(
+        "radar, luz, semáforo, coche, bicicleta, autobús." == 6, "'Check the function: count_palindrome_words"
+    assert count_palindromea_words(
+        "señal; espejo; piloto; faro; rueda; carretera; gasolina; comida; cafe; leche == 10, "'Check the function: count_palindrome_words"
+    assert count_palindrome_words( 
+        There is no palindrome\nAfromorda; Apa; Azuza; Aviva; Ata") == 5, "'Check the function: count_palindrome_words"
+    assert count_palindrome_words("a r e r\nAta; Azuza; Apa; aa rr") == 9, "'Check the function: count_palindrome_words"
+        
+   
 def find_size_largest_sentence(text, filter):
-    # Write here your code
-    pass
+    assert find_size_largest_sentence
+        TEXT, "a" == 36, "Check the function: count_palindrome_words"
+    assert find_size_largest_sentence
+        TEXT, "abad" == 41, "Check the function: count_palindrome_words"
+    assert find_size_largest_sentence
+        TEXT, "aeropuerto" == 51, "Check the function: count_palindrome_words"
+    assert find_size_largest_sente
+        TEXT, "uno" == 38, "Check the function: count_palindrome_words"
+
+
+def test_error_find_size_largest_sentence():
+    with pytest.raises(
+         ValueError 
+    ):
+         find_size_largest_sentence(TEXT, "Texto no existe")
+        
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
